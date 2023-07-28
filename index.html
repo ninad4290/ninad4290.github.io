@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+</head>
+<body>
+    <div id="header">
+        <div>
+            <div class="container header-text">
+                <nav>
+                    <img src = "images/logo.png" class = "logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#portfolio">Projects</a></li>
+                        
+                    </ul>
+                </nav>
+            <div class="centered-content">
+                <h1 style = "margin-top: -80px;">Hi &#128075, I am <span>Ninad</span> Thakker</h1><br>
+                 <p class="subheading">Computer Engineering Student at McMaster University</p>
+                 <br>
+                 <div class="social-icons">
+                    <a href="https://github.com/ninad4290"><i class="fa fa-github"></i></a>
+                    <a href="https://instagram.com/ninad4290"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ninad-thakker-268802226/"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                  
+                  
+            </div>
+        </div>
+        
+        </div>
+       <!----------------------about-----------------------> 
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src = "images/test.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class = "sub-title">About Me</h1>
+                        <br><br>
+                        <p class = "custom"> Hi, I'm Ninad, an undergraduate Computer Engineering student at McMaster <br> University in Hamilton, Ontario, Canada. I strive to become a computer <br> engineer. My interests are Web Development, Embedded Systems, Hardware <br> Engineering, Machine Learning & Artificial Intelligence and Computer Networks.
+                        </p>
+                        <br><br>
+                        <div class="tab-titles">
+                            <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class = "tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li><span>Languages</span><br>Python, C/C++ , Verilog , MATLAB , R , HTML , CSS , Javascript </li><br>
+                                <li><span>Hardwares</span><br>Raspberry Pi, Analog Discovery 2, ARM Cortex M4 </li><br>
+                                <li><span>Softwares</span><br>Keil uVision 5, Realterm, Waveforms, Autodesk Inventor, Github, Altera<br> Quartus II, Microsoft Office Suite, LTSpice, NI Multisim, PSpice </li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id ="experience">
+                            <ul>
+                                <li><span>Rugged Monitoring (May to August 2023)</span> - Electrical Engineering Intern<br><br>
+                            
+                                    • Designed and programmed a transformer bushing simulator.<br>
+                                    • Tested different transformer monitoring equipment and algorithms.</li>
+                            </ul><br>
+                        </div>
+                        <div class="tab-contents" id = "education">
+                            <ul>
+                                <li><span>2021-2025</span><br>Bachelor of Engineering in Computer Engineering- McMaster University</li><br>
+                                <li><span>2013-2021</span><br>High School Diploma, DPS - MIS, Doha-Qatar<br> </li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!----------portfolio----------->
+        <div id="portfolio" style="margin-top: -92px;">
+            <div class="container">
+                <h1 class = "sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src ="images/TOF.jpg">
+                    <div class="layer">
+                        <h3>Microprocessor Systems Project</h3>
+                        <p>LIDAR like 3D measurement and modelling tool that uses time-of-flight sensor to create a spacial model of a hallway</p>
+                        <a href = "https://github.com/ninad4290/Microprocessor-Systems-Project"><span class="material-symbols-outlined">
+                            open_in_new
+                            </span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src ="images/p3.png">
+                    <div class="layer">
+                        <h3>Automated Recycling Sorting System</h3>
+                        <p>Program for sorting and recycling containers of varying materials using Q-arm and acutators, sensors on a Q-bot.</p>
+                        <a href = "https://github.com/ninad4290/Automated-Recycling-Sorting-System"><span class="material-symbols-outlined">
+                            open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src ="images/img.png">
+                    <div class="layer">
+                        <h3>Ergonomic Mouse</h3>
+                        <p>Created a mouse using AutoDesk Inventor and soldering wires to aid the individuals suffering from Ehlers-Danlos syndrome.</p>
+                        <a href = 'https://www.notion.so/Hi-I-m-Ninad-Thakker-64af0221695a476eb6cff50913978f3a?p=19fc5032db0a4cbd983eb279f69e118f&pm=c'><span class="material-symbols-outlined">
+                            open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src ="images/tools.jpg">
+                    <div class="layer">
+                        <h3>Surgical Tools Container</h3>
+                        <p>3D modelled a container to hold surgical tools that can be automatically desterlized with the aid of a custom-programmed robotic arm</p>
+                        <a href = "https://www.notion.so/Hi-I-m-Ninad-Thakker-64af0221695a476eb6cff50913978f3a?p=18c62437adf64455b94d0ba1adcf9f85&pm=c"><span class="material-symbols-outlined">
+                            open_in_new</span></a>
+                    </div>
+                </div>
+            </div>  
+            <a href = "https://github.com/ninad4290?tab=repositories" class="btn">See More</a> 
+            </div>
+            <div class="copyright">
+              <p>Copyright © Ninad Thakker</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+    
+            // Add "active-link" class to the clicked tab link
+            event.target.classList.add("active-link");
+    
+            // Find the corresponding tab content and add "active-tab" class to show it
+            var selectedTabContent = document.getElementById(tabname);
+            selectedTabContent.classList.add("active-tab");
+        }
+    
+        // Set the initial tab and content to be active
+        document.getElementsByClassName("tab-links")[0].classList.add("active-link");
+        document.getElementsByClassName("tab-contents")[0].classList.add("active-tab");
+        
+    </script>
+   
+    
+</body>
+</html>
