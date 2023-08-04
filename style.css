@@ -29,36 +29,43 @@ body{
   
   .centered-content .social-icons {
     margin-top: 40px;
+   
   }
   
   .centered-content .social-icons a {
     margin-right: 10px;
     font-size: 50px;
+ 
   }
 
   .social-icons {
     display: flex;
     justify-content: center; /* Align icons horizontally */
     align-items: center; /* Align icons vertically */
+   
   }
   
   .social-icons a {
     display: inline-block; /* Ensure each icon is on a separate line */
     margin: 5px; /* Adjust the margin value for spacing between icons */
     font-size: 48px;
+   
   }
   
   /* Additional styles for icon colors */
   .social-icons .fa-github {
     color: white;
+  
   }
   
   .social-icons .fa-instagram {
     color: palevioletred;
+    z-index: -1;
   }
   
   .social-icons .fa-linkedin {
     color: lightsteelblue;
+    z-index: -1;
   }
   
   
@@ -118,9 +125,19 @@ nav ul li a:hover::after{
     text-align: center;
     height: 100vh;
     width: 100%;
-    background-image: url(images/ny.png);
+    background-image: url();
     background-size: cover;
     background-attachment: fixed; /* Add this line to fix the background */
+}
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
 }
 
 .header-text h1{
