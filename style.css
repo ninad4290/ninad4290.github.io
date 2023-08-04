@@ -42,6 +42,7 @@ body{
     display: flex;
     justify-content: center; /* Align icons horizontally */
     align-items: center; /* Align icons vertically */
+    transition: transform 0.3s ease;
    
   }
   
@@ -67,7 +68,11 @@ body{
     color: lightsteelblue;
     z-index: -1;
   }
-  
+  .social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+    
+  }
   
 
 .container{
@@ -119,7 +124,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
+/*.header-text{
     
     font-size: 30px;
     text-align: center;
@@ -128,7 +133,8 @@ nav ul li a:hover::after{
     background-image: url();
     background-size: cover;
     background-attachment: fixed; /* Add this line to fix the background */
-}
+/*}*/ 
+
 .video-bg{
     position: absolute;
     top: 0;
@@ -203,10 +209,10 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -215,7 +221,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #ff004f;
+    color:aqua;
     font-size: 16px;
 }
 .tab-contents{
@@ -374,10 +380,3 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
     
-
-
-  
-  
-
-
-
