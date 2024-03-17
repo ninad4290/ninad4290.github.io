@@ -221,7 +221,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:aqua;
+    color:#ff004f;
     font-size: 16px;
 }
 .tab-contents{
@@ -380,3 +380,18 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
     
+li span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-logo {
+    height: 40px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+  }
+  .School-logo {
+    height: 40px; /* Adjust as needed */
+    width: 60px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+  }
