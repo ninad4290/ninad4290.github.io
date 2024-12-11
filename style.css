@@ -395,3 +395,164 @@ li span {
     width: 60px; /* Adjust as needed */
     margin-right: 10px; /* Adjust as needed */
   }
+/* Card Section */
+.card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto; /* Center the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #d4d4d4; /* Ensure the text matches your website's palette */
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-header h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .card-header .icon {
+    margin-left: 8px;
+  }
+  
+  .card-header .logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+  }
+  
+  .card-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  
+  .card-content hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 10px 0;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 620px) {
+    .card {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .card-header h1 {
+      font-size: 18px;
+    }
+  
+    .card-content p {
+      font-size: 13px;
+    }
+  }
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+    gap: 20px; /* Adds spacing between cards */
+    justify-content: center; /* Centers cards horizontally */
+}
+
+.card {
+    flex: 1 1 45%; /* Each card takes up 45% of the width */
+    max-width: 400px; /* Limits the max width of each card */
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    line-height: 1.6;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.education-section {
+    display: flex; /* Flexbox to align cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    margin-top: 50px; /* Add spacing above the section */
+}
+
+.education-card {
+    flex: 1 1 45%; /* Each card takes up 45% of the width */
+    max-width: 400px; /* Maximum width for consistency */
+    background-color: #1e1e2f; /* Match the experience card's background */
+    padding: 20px; /* Add internal padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    color: white; /* Text color */
+    display: flex; /* Arrange content horizontally */
+    align-items: center; /* Vertically align content */
+    gap: 15px; /* Add spacing between logo and text */
+}
+
+.education-logo {
+    height: 50px; /* Set a fixed height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the logo doesn't stretch */
+    border-radius: 5px; /* Optional: add slight rounding to logos */
+}
+
+.education-card .text {
+    flex: 1; /* Allow text to take up remaining space */
+}
+
+.education-card .text h3 {
+    font-size: 1.5rem; /* Heading size */
+    margin: 0 0 5px; /* Add space below the heading */
+    color: #ffffff; /* White for headings */
+}
+
+.education-card .text p {
+    margin: 5px 0; /* Add spacing between lines */
+    font-size: 1rem; /* Font size for details */
+    color: #d4d4d4; /* Lighter color for the body text */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .education-card {
+        flex-direction: column; /* Stack logo above text */
+        align-items: center; /* Center align content */
+        text-align: center; /* Center text */
+    }
+
+    .education-logo {
+        margin-bottom: 10px; /* Add space below logo */
+    }
+
+    .education-section {
+        gap: 30px; /* Increase space between stacked cards */
+    }
+}
+
+  
+
+
+
+  

@@ -41,62 +41,105 @@
         
         </div>
        <!----------------------about-----------------------> 
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src = "images/linkedin.jpg">
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/linkedin.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p class="custom">
+                        Hi, I'm Ninad, an undergraduate Computer Engineering student at McMaster University in Hamilton, Ontario, Canada. I aspire to become a good hardware engineer. My interests are Embedded Systems, GPU/CPU design, and developing robots.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class = "sub-title">About Me</h1>
-                        <br><br>
-                        <p class = "custom"> Hi, I'm Ninad, an undergraduate Computer Engineering student at McMaster <br> University in Hamilton, Ontario, Canada. I aspire to become a hardware engineer. My interests are Embedded Systems, Hardware Engineering and Robotic Systems.
-                        </p>
-                        <br><br>
-                        <div class="tab-titles">
-                            <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class = "tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    <div class="tab-contents active-tab" id="experience">
+                        <div id="experience-card-section" class="experience-container">
+                            <!-- Card 1 -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>ASIC Design Verification Engineering Intern</h1>
+                                    <img src="images/AMD 2.png  " alt="AMD Logo" class="logo">
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>AMD</strong></p>
+                                    <p>Markham, ON | May 2024 - Present</p>
+                                    <hr>
+                                    <p>
+                                        Working on the Security IP team, focusing on Hardware/Firmware co-verification of various embedded micro-processor subsystems and the associated hardware accelerators in leading edge SOC’s.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>Electrical Engineering Intern</h1>
+                                    <img src="images/rugged.png" alt="Rugged Logo" class="logo">
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Rugged Monitoring</strong></p>
+                                    <p>Quebec, QC | May 2023 - Aug 2023</p>
+                                    <hr>
+                                    <p>
+                                        Worked on developing a breaker condition monitoring system (BCM) that allows for predictive maintenance, helping operators identify potential issues before they lead to breaker failure, improving the overall reliability and safety of the electrical system.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-contents active-tab" id = "skills">
-                            <ul>
-                                <li><span>💻Languages</span><br> Python, C++, C, SystemVerilog, MATLAB, Java, HTML, CSS, Javascript, Bash/Shell</li><br>
-                                <li><span>⚡Hardwares</span><br>Raspberry Pi, ARM Cortex M4, ARM64 SoM, Cyclone IV FPGA, Signal Generators, Oscilloscopes</li><br>
-                                <li><span>⚙️Tools/Softwares </span><br>Intel Quartus Prime, Simulink, ModelSim, Keil uVision 5, Yocto,  Waveforms, Git,<br> Microsoft Office Suite,
-                                    LTSpice, NI Multisim, PSpice </li><br>
-                            </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div id="experience-card-section" class="experience-container">
+                            <!-- Card 1 -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>Bachelors of Engineering in Computer Engineering</h1>
+                                    <img src="images/mcmaster-logo-2024-rev-maroon-300x300.jpg" alt="AMD Logo" class="logo">
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>McMaster University</strong></p>
+                                    <p>Hamilton, ON | August 2021 - May 2026</p>
+                                    <hr>
+                                    <p>
+                                        Relevant courses include Computer Architecture, Embedded Systems, Digital Systems Design, Analog Circuits, Operating System, Software Devlopment
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>High School Diploma</h1>
+                                    <img src="images/image.png" alt="Rugged Logo" class="logo">
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Delhi Public School</strong></p>
+                                    <p>Doha, Qatar | April 2013 - June 2021</p>
+                                    <hr>
+                                    <p>
+                                        Relevant courses include Physics, Chemistry, Mathematics, Computer Science
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-contents" id ="experience">
-                            <ul>
-                                <li><span><img src="images/amd.png" class="company-logo"> AMD (May 2024 to Present) - Design Verification Engineer (Intern)</span><br>
-                                    •  Developed and refined MP subsystem design and verification workflow by creating and debugging automation scripts.<br><br>
-                                    •  Setup & debugged test regressions, analyze simulation results, resolve technical issues with design, verification teams.<br><br>
-                                    •  Modified and debugged RTL designs using C-DPI directed test methodology, and/or using verification team’s
-                                       testbenches and tests.<br><br>
-                                    •   Developed and debugged test plans using System Verilog/UVM constrained random test methodology and C-DPI
-                                        directed test &nbsp;&nbsp;&nbsp;methodology and using OOP techniques to maintain testbenches<br><br>
-                                </li>
-                            <ul>
-                                <li><span><img src="images/rugged.png" class="company-logo">Rugged Monitoring (May to August 2023) - Electrical Engineer (Intern)</span><br>
-                            
-                                    •  Contributed to a breaker condition monitoring project by implementing monitoring features that result in 25 %
-                                       &nbsp;&nbsp;&nbsp;enhancement in overall efficiency and safety of the electrical systems.<br><br>
-                                    •  Executed Thermal tests on transformer monitoring equipment, enhancing product quality by 10%.<br><br>
-                                    •  Contributed to building firmware using Yocto on an ARM64 SoM, managing and interacting with Linux
-                                    directly on the &nbsp;&nbsp;&nbsp;hardware.
-                                </li>
-                            </ul><br>
-                        </div>
-                        <div class="tab-contents" id = "education">
-                            <ul>
-                                <li><span><img src="images/mac.png" class="School-logo">2021-2025</span><br>Bachelor of Engineering in Computer Engineering- McMaster University</li><br>
-                                <li><span><img src="images/image.png" class="company-logo">2013-2021</span><br>High School Diploma, DPS - MIS, Doha-Qatar<br> </li><br>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <!-- Skills Content -->
+                        <ul>
+                            <li><span>💻 Programming Language</span><br> Python, C/C++, SystemVerilog, SystemC, Bash, Perl, MATLAB, Java, HTML, CSS, Javascript</li><br>
+                            <li><span>⚡ Hardware</span><br>Raspberry Pi, ARM Cortex M4, ARM64 SoM, Cyclone IV FPGA, Signal Generators, Oscilloscopes</li><br>
+                            <li><span>⚙️ Tools/Software </span><br>Synopsys Verdi/VCS, Intel Quartus Prime, Simulink, ModelSim, Keil uVision 5, Yocto,  Waveforms, Git,<br> Microsoft Office Suite,
+                                LTSpice, NI Multisim, PSpice </li><br>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
           <!----------portfolio----------->
         <div id="portfolio" style="margin-top: -92px;">
             <div class="container">
